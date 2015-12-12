@@ -63,8 +63,6 @@ namespace QuickSort
         {
             double checking = data[r];
             int i = p-1;
-            if (i < 0)
-            {
                 for (int j = p; j < r; j++)
                 {
                     if (data[j] <= checking)
@@ -74,7 +72,7 @@ namespace QuickSort
                     }
                 }
                 Exchange(i + 1, r);
-            }
+
             return i + 1;
         }
 
